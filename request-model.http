@@ -1,0 +1,31 @@
+
+GET http://localhost:3333/videos?search=Meu HTTP/1.1
+
+###
+
+POST http://localhost:3333/videos HTTP/1.1
+Content-Type: application/json
+Accept-Language: pt-br
+
+{
+    "title": "Meu primeiro vídeo",
+    "description": "Esse é meu primeiro vídeo, logo mais vem os próximos.",
+    "duration": 1000
+}
+
+###
+
+PUT http://localhost:3333/videos/8110f8db-fb8f-4564-a114-4fa4c4e98b89 HTTP/1.1   
+Content-Type: application/json
+Accept-Language: pt-br
+
+{
+    "title": "Meu segundo vídeo",
+    "description": "Esse é meu segundo vídeo, então cuidado",
+    "duration": 2000
+}
+
+### 
+
+DELETE http://localhost:3333/videos/8110f8db-fb8f-4564-a114-4fa4c4e98b89 HTTP/1.1
+
